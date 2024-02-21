@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: EMPLOYEE-SERVICE
+  profiles:
+    active: prod
+  config:
+    import:
+      - employee_qa.yml
+      - employee_prod.yml
+
+server:
+  port: 8081
